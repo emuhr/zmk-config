@@ -27,11 +27,11 @@
 // | SHIFT |  k  |  y  |   .   |  '  |  x  | PG_UP | PG_DOWN | --- | HOME | END   |  j    |  v    |  w    |  b   | z  | SHFT(RET) |
 // | CRTL  | ALT | GUI | LOWER |    GUI    | SPACE | SPACE   | --- | DEL  | RETURN|     RAISE     | LEFT  | DOWN | UP |   RIGHT   |
             bindings = <
-   &kp ESC   &kp PLUS &kp RBKT &kp RBRC &kp RPAR      &kp AMPS                                          &kp EQUAL &kp LPAR &kp LBRC  &kp LRKT &kp STAR &kp BSPC
-   &kp TAB   &kp p    &kp u    &sl 2    &kp COMMA     &kp q      &kp LPAR                     &kp RPAR  &kp g     &kp c    &kp l     &kp m    &kp f    &kp MINUS
-   &kp LCTRL &kp h    &kp i    &kp e    &kp a         &kp o      &kp LBKT                     &kp RBKT  &kp d     &kp t    &kp r     &kp n    &kp s &kp SQT
-   &kp LSHFT &kp k    &kp y    &kp .    &kp SQT       &kp x      &kp PG_UP &kp PG_DN &kp HOME &kp END   &kp j     &kp v    &kp w     &kp b    &kp z &mt RSHFT RET
-   &kp LCTRL &kp LALT &kp LGUI &mo 3      &kp LGUI    &mo 1     &kp SPACE &kp DEL  &kp SPACE       &mo 2      &kp LEFT  &kp DOWN &kp UP   &kp RIGHT
+   &kp ESC   &kp PLUS   &kp RBKT    &kp RBRC    &kp RPAR      &kp AMPS                                          &kp EQUAL   &kp LPAR    &kp LBRC    &kp LRKT    &kp STAR    &kp BSPC
+   &kp TAB   &kp P      &kp U       &sl 2       &kp COMMA     &kp Q      &kp LPAR                     &kp RPAR  &kp G       &kp C       &kp L       &kp M       &kp F       &kp MINUS
+   &kp LCTRL &kp H      &kp I       &kp E       &kp A         &kp O      &kp LBKT                     &kp RBKT  &kp D       &kp T       &kp R       &kp N       &kp S       &kp SQT
+   &kp LSHFT &kp K      &kp Y       &kp .       &kp SQT       &kp X      &kp PG_UP &kp PG_DN &kp HOME &kp END   &kp J       &kp V       &kp W       &kp B       &kp Z       &mt RSHFT RET
+   &kp LCTRL &kp LALT   &kp LGUI    &mo 3      &kp LGUI    &mo 1     &kp SPACE &kp DEL  &kp SPACE       &mo 2      &kp LEFT  &kp DOWN &kp UP   &kp RIGHT
             >;
 
         };
