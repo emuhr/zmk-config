@@ -16,40 +16,39 @@
 
 / {
     behaviors {
-    as_ht: autoshift_hold_tap {
-        compatible = "zmk,behavior-hold-tap";
-        label = "AUTOSHIFT_HOLD_TAP";
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        bindings = <&shifted>, <&kp>;
+        as_ht: autoshift_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AUTOSHIFT_HOLD_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            bindings = <&shifted>, <&kp>;
         };
     };
 
     macros {
         shifted: macro_shifted_kp {
-        #binding-cells = <1>;
-        label = "MACRO_SHIFTED_KP";
-        compatible = "zmk,behavior-macro-one-param";
-        bindings =
-            <&macro_press &kp LSHFT>,
-            <&macro_param_1to1 &macro_tap &kp MACRO_PLACEHOLDER>,
-            <&macro_release &kp LSHFT>;
+            #binding-cells = <1>;
+            label = "MACRO_SHIFTED_KP";
+            compatible = "zmk,behavior-macro-one-param";
+            bindings =
+                <&macro_press>,
+                <&kp LSHFT &macro_param_1to1>,
+                <&macro_tap>,
+                <&kp MACRO_PLACEHOLDER>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
 
         as: autoshift {
-        compatible = "zmk,behavior-macro-one-param";
-        #binding-cells = <1>;
-        label = "AUTOSHIFT_KP";
-        bindings =
-            <&macro_press>,
-            <&macro_param_1to1>,
-            <&macro_param_1to2>,
-            <&as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
-            <&macro_pause_for_release>,
-            <&macro_release>,
-            <&macro_param_1to1>,
-            <&macro_param_1to2>,
-            <&as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            label = "AUTOSHIFT_KP";
+            bindings =
+                <&macro_press>,
+                <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
         };
     };
 
@@ -66,9 +65,9 @@
 
             bindings = <
 &kp ESC    &kp DE_PLUS  &kp DE_LEFT_BRACKET  &kp DE_LEFT_BRACE  &kp DE_LEFT_PARENTHESIS  &kp DE_AMPS                                               &kp DE_EQUAL  &kp DE_RIGHT_PARENTHESIS  &kp DE_RIGHT_BRACE  &kp DE_RIGHT_BRACKET  &kp DE_STAR  &kp BSPC
-&kp TAB    &kp P        &kp U                &sl 2              &kp DE_COMMA             &kp Q        &trans                            &trans     &kp G         &kp C                     &kp L               &kp M                 &kp F        &kp DE_MINUS
-&kp LCTRL  &kp H        &kp I                &kp E              &kp A                    &kp O        &trans                            &trans     &kp D         &kp T                     &kp R               &kp N                 &kp S        &kp DE_PLUS
-&mo 1      &kp K        &kp Y                &kp DE_PERIOD      &kp DE_APOSTROPHE        &kp X        &kp PG_UP  &kp PG_DN    &kp HOME  &kp END    &kp J         &kp V                     &kp W               &kp B                 &kp Z        &mt RSHFT RET
+&kp TAB    &as P        &as U                &sl 2              &kp DE_COMMA             &as Q        &trans                            &trans     &as G         &as C                     &as L               &as M                 &as F        &kp DE_MINUS
+&kp LCTRL  &as H        &as I                &as E              &as A                    &as O        &trans                            &trans     &as D         &as T                     &as R               &as N                 &as S        &kp DE_PLUS
+&mo 1      &as K        &as Y                &kp DE_PERIOD      &kp DE_APOSTROPHE        &as X        &kp PG_UP  &kp PG_DN    &kp HOME  &kp END    &as J         &as V                     &as W               &as B                 &as Z        &mt RSHFT RET
 &kp LCTRL  &kp LALT     &kp LGUI             &mo 3              &kp LGUI                              &mo 1      &kp SPACE    &kp DEL   &kp SPACE                &mo 2                     &kp LEFT            &kp DOWN              &kp UP       &kp RIGHT
             >;
         };
@@ -100,8 +99,8 @@
 
             bindings = <
 &trans  &trans  &trans           &trans  &trans           &trans                                             &trans  &trans  &trans  &trans  &trans          &trans
-&trans  &trans  &kp DE_U_UMLAUT  &trans  &trans           &trans           &trans                    &trans  &trans  &trans  &trans  &trans  &trans          &trans
-&trans  &trans  &trans           &trans  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT  &trans                    &trans  &trans  &trans  &trans  &trans  &kp DE_SHARP_S  &trans
+&trans  &trans  &as DE_U_UMLAUT  &trans  &trans           &trans           &trans                    &trans  &trans  &trans  &trans  &trans  &trans          &trans
+&trans  &trans  &trans           &trans  &as DE_A_UMLAUT  &as DE_O_UMLAUT  &trans                    &trans  &trans  &trans  &trans  &trans  &as DE_SHARP_S  &trans
 &trans  &trans  &trans           &trans  &trans           &trans           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
 &trans  &trans  &trans           &trans  &trans                            &trans  &trans    &trans  &trans          &trans  &trans  &trans  &trans          &trans
             >;
