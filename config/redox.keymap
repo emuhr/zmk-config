@@ -27,11 +27,11 @@
             // | CRTL  | ALT | GUI | LOWER |    GUI    | SPACE | SPACE   | --- | DEL  | RETURN|     RAISE     | LEFT  | DOWN | UP |   RIGHT   |
 
             bindings = <
-&kp ESC    &kp PLUS  &kp LEFT_BRACKET  &kp LBRC    &kp LPAR   &kp AMPS                                               &kp EQUAL  &kp RPAR  &kp RIGHT_BRACE  &kp RBKT  &kp STAR  &kp BSPC
-&kp TAB    &kp P     &kp U             &sl 2       &kp COMMA  &kp Q     &kp LPAR                          &kp RPAR   &kp G      &kp C     &kp L            &kp M     &kp F     &kp MINUS
-&kp LCTRL  &kp H     &kp I             &kp E       &kp A      &kp O     &kp LBKT                          &kp RBKT   &kp D      &kp T     &kp R            &kp N     &kp S     &kp SQT
-&kp LSHFT  &kp K     &kp Y             &kp PERIOD  &kp SQT    &kp X     &kp PG_UP  &kp PG_DN    &kp HOME  &kp END    &kp J      &kp V     &kp W            &kp B     &kp Z     &mt RSHFT RET
-&kp LCTRL  &kp LALT  &kp LGUI          &mo 3       &kp LGUI             &mo 1      &kp SPACE    &kp DEL   &kp SPACE             &mo 2     &kp LEFT         &kp DOWN  &kp UP    &kp RIGHT
+&kp ESC    &kp DE_PLUS  &kp DE_LEFT_BRACKET  &kp DE_LEFT_BRACE  &kp DE_LEFT_PARENTHESIS  &kp DE_AMPS                                               &kp DE_EQUAL  &kp DE_RIGHT_PARENTHESIS  &kp DE_RIGHT_BRACE  &kp DE_RIGHT_BRACKET  &kp DE_STAR  &kp BSPC
+&kp TAB    &kp P        &kp U                &sl 2              &kp DE_COMMA             &kp Q        &trans                            &trans     &kp G         &kp C                     &kp L               &kp M                 &kp F        &kp DE_MINUS
+&kp LCTRL  &kp H        &kp I                &kp E              &kp A                    &kp O        &trans                            &trans     &kp D         &kp T                     &kp R               &kp N                 &kp S        &kp DE_PLUS
+&kp LSHFT  &kp K        &kp Y                &kp DE_PERIOD      &kp DE_APOSTROPHE        &kp X        &kp PG_UP  &kp PG_DN    &kp HOME  &kp END    &kp J         &kp V                     &kp W               &kp B                 &kp Z        &mt RSHFT RET
+&kp LCTRL  &kp LALT     &kp LGUI             &mo 3              &kp LGUI                              &mo 1      &kp SPACE    &kp DEL   &kp SPACE                &mo 2                     &kp LEFT            &kp DOWN              &kp UP       &kp RIGHT
             >;
         };
 
@@ -44,11 +44,11 @@
             // | CRTL  | ALT | GUI | LOWER |     GUI     | LOWER | SPACE   | --- | DEL  |  0  |    RAISE  | LEFT | DOWN | UP  | RIGHT |
 
             bindings = <
-&trans  &kp N1    &kp N2     &kp N3     &kp N4   &kp N5                                     &kp N6           &kp N7     &kp N8       &kp N9        &kp N0     &trans
-&trans  &kp EXCL  &kp QMARK  &kp CARET  &kp LT   &kp GT   &trans                    &trans  &kp NON_US_HASH  &kp TILDE  &kp PERCENT  &kp SEMI      &kp COLON  &kp DEL
-&kp F1  &kp F2    &kp F3     &kp F4     &kp F5   &kp F6   &trans                    &trans  &trans           &kp LEFT   &kp DOWN     &kp UP_ARROW  &kp RIGHT  &kp KP_MINUS
-&kp F7  &kp F8    &kp F9     &kp F10    &kp F11  &kp F12  &trans  &trans    &trans  &trans  &trans           &trans     &trans       &trans        &trans     &kp RET
-&trans  &trans    &trans     &trans     &trans            &trans  &trans    &trans  &trans                   &trans     &trans       &trans        &trans     &trans
+&trans  &kp N1       &kp N2           &kp N3        &kp N4            &kp N5                                                 &kp N6       &kp N7        &kp N8          &kp N9        &kp N0        &trans
+&trans  &kp DE_EXCL  &kp DE_QUESTION  &kp DE_CARET  &kp DE_LESS_THAN  &kp DE_GREATER_THAN  &trans                    &trans  &kp DE_HASH  &kp DE_TILDE  &kp DE_PERCENT  &kp DE_SEMI   &kp DE_COLON  &kp DEL
+&kp F1  &kp F2       &kp F3           &kp F4        &kp F5            &kp F6               &trans                    &trans  &trans       &kp LEFT      &kp DOWN        &kp UP_ARROW  &kp RIGHT     &kp DE_MINUS
+&kp F7  &kp F8       &kp F9           &kp F10       &kp F11           &kp F12              &trans  &trans    &trans  &trans  &trans       &trans        &trans          &trans        &trans        &kp RET
+&trans  &trans       &trans           &trans        &trans                                 &trans  &trans    &trans  &trans               &trans        &trans          &trans        &trans        &trans
             >;
         };
 
