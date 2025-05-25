@@ -63,11 +63,11 @@
             // | CRTL  | ALT | GUI | LOWER |    GUI    | SPACE | SPACE   | --- | DEL  | RETURN|     RAISE     | LEFT  | DOWN | UP |   RIGHT   |
 
             bindings = <
-&kp ESC    &kp DE_PLUS       &kp DE_LEFT_BRACKET  &kp DE_LEFT_BRACE  &kp DE_LEFT_PARENTHESIS  &kp DE_AMPS                                                  &kp DE_EQUAL  &kp DE_RIGHT_PARENTHESIS  &kp DE_RIGHT_BRACE  &kp DE_RIGHT_BRACKET  &kp DE_MINUS  &kp BSPC
-&kp TAB    &as P             &as U                &sl 2              &kp DE_COMMA             &as Q        &trans                              &trans      &as G         &as C                     &as L               &as M                 &as F         &kp DE_PIPE
-&kp LCTRL  &as H             &as I                &as E              &as A                    &as O        &trans                              &trans      &as D         &as T                     &as R               &as N                 &as S         &kp DE_SLASH
-&mo 1      &as K             &as DE_Y             &kp DE_PERIOD      &kp DE_APOSTROPHE        &as X        &to 3      &kp PG_DN    &bt BT_PRV  &bt BT_NXT  &as J         &as V                     &as W               &as B                 &as DE_Z      &kp DE_BACKSLASH
-&trans     &kp LEFT_CONTROL  &kp LGUI             &kp LEFT_ALT       &kp LGUI                              &kp SPACE  &kp SPACE    &kp DEL     &kp ENTER                 &trans                    &kp LEFT            &kp DOWN              &kp UP        &kp RIGHT
+&kp ESC    &kp DE_PLUS       &kp DE_LEFT_BRACKET  &kp DE_LEFT_BRACE  &kp DE_LEFT_PARENTHESIS  &kp DE_AMPS                                              &kp DE_EQUAL  &kp DE_RIGHT_PARENTHESIS  &kp DE_RIGHT_BRACE  &kp DE_RIGHT_BRACKET  &kp DE_MINUS  &kp BSPC
+&kp TAB    &as P             &as U                &sl 2              &kp DE_COMMA             &as Q        &trans                           &trans     &as G         &as C                     &as L               &as M                 &as F         &kp DE_PIPE
+&kp LCTRL  &as H             &as I                &as E              &as A                    &as O        &trans                           &trans     &as D         &as T                     &as R               &as N                 &as S         &kp DE_SLASH
+&mo 1      &as K             &as DE_Y             &kp DE_PERIOD      &kp DE_APOSTROPHE        &as X        &to 3      &kp PG_DN    &none    &none      &as J         &as V                     &as W               &as B                 &as DE_Z      &kp DE_BACKSLASH
+&trans     &kp LEFT_CONTROL  &kp LGUI             &kp LEFT_ALT       &kp LGUI                              &kp SPACE  &kp SPACE    &kp DEL  &kp ENTER                &trans                    &kp LEFT            &kp DOWN              &kp UP        &kp RIGHT
             >;
         };
 
@@ -114,11 +114,11 @@
             // | CRTL  | ALT   |  GUI     |   LOWER   |      GUI        | LOWER | SPACE   | --- | DEL  | SPACE |   RAISE   | LEFT | DOWN | UP  |   RIGHT    |
 
             bindings = <
-&trans  &kp NUMBER_1      &kp NUMBER_2  &kp N3  &kp N4  &kp N5                                          &kp N6  &kp N7  &kp N8  &kp N9   &kp N0   &trans
-&trans  &none             &kp Q         &kp W   &kp E   &kp R   &kp T                        &none      &none   &none   &none   &none    &none    &none
-&none   &none             &kp A         &kp S   &kp D   &kp F   &kp G                        &trans     &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6
-&none   &kp LEFT_SHIFT    &kp Z         &kp X   &kp C   &kp V   &to 0      &trans    &trans  &trans     &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans  &trans          &kp SPACE  &trans    &trans  &kp ENTER          &trans  &trans  &trans   &trans   &trans
+&trans  &kp NUMBER_1      &kp NUMBER_2  &kp N3  &kp N4  &kp N5                                          &kp N6  &kp N7          &kp N8        &kp N9        &kp N0        &trans
+&trans  &none             &kp Q         &kp W   &kp E   &kp R   &kp T                        &none      &none   &none           &none         &none         &none         &none
+&none   &none             &kp A         &kp S   &kp D   &kp F   &kp G                        &trans     &kp F1  &kp F2          &kp F3        &kp F4        &kp F5        &kp F6
+&none   &kp LEFT_SHIFT    &kp Z         &kp X   &kp C   &kp V   &to 0      &trans    &trans  &trans     &kp F7  &kp F8          &kp F9        &kp F10       &kp F11       &kp F12
+&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans  &trans          &kp SPACE  &trans    &trans  &kp ENTER          &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
             >;
         };
     };
