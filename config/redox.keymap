@@ -54,9 +54,9 @@
 
             bindings = <
 &kp ESC         &kp DE_PLUS       &kp DE_LEFT_BRACKET  &kp DE_LEFT_BRACE  &kp DE_LEFT_PARENTHESIS  &kp DE_AMPS                                              &kp DE_EQUAL  &kp DE_RIGHT_PARENTHESIS  &kp DE_RIGHT_BRACE  &kp DE_RIGHT_BRACKET  &kp DE_MINUS  &kp BSPC
-&kp TAB         &as P             &as U                &sl 2              &kp DE_COMMA             &as Q        &trans                           &trans     &as G         &as C                     &as L               &as M                 &as F         &kp DE_PIPE
-&mo 1           &as H             &as I                &as E              &as A                    &as O        &trans                           &trans     &as D         &as T                     &as R               &as N                 &as S         &kp DE_SLASH
-&kp LEFT_SHIFT  &as K             &as DE_Y             &kp DE_PERIOD      &kp DE_APOSTROPHE        &as X        &to 3      &kp PG_DN    &none    &none      &as J         &as V                     &as W               &as B                 &as DE_Z      &kp DE_BACKSLASH
+&kp TAB         &kp P             &kp U                &sl 2              &kp DE_COMMA             &kp Q        &trans                           &trans     &kp G         &kp C                     &kp L               &kp M                 &kp F         &kp DE_PIPE
+&mo 1           &kp H             &kp I                &kp E              &kp A                    &kp O        &trans                           &trans     &kp D         &kp T                     &kp R               &kp N                 &kp S         &kp DE_SLASH
+&kp LEFT_SHIFT  &kp K             &kp DE_Y             &kp DE_PERIOD      &kp DE_APOSTROPHE        &kp X        &to 3      &kp PG_DN    &none    &none      &kp J         &kp V                     &kp W               &kp B                 &kp DE_Z      &kp DE_BACKSLASH
 &trans          &kp LEFT_CONTROL  &kp LGUI             &kp LEFT_ALT       &kp LGUI                              &kp SPACE  &kp SPACE    &kp DEL  &kp ENTER                &trans                    &kp LEFT            &kp DOWN              &kp UP        &kp RIGHT
             >;
         };
